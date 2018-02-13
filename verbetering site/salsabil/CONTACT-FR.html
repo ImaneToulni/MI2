@@ -1,0 +1,113 @@
+<!-- html document begint altijd met een ! + DOCTYPE -->
+<!DOCTYPE>
+<!-- taal van de pagina zetten waar lang voor laguage staat -->
+<html lang="fr">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- html pagina met de css pagina linken -->
+    <link rel="stylesheet" type="text/css" href="STYLE.css">
+    <!-- titel invoeren die de gebruiker niet ziet -->
+    <title> Accueil </title>
+</head>
+
+<body>
+    <!-- header is een blok boven, tegengestelde van de footer -->
+    <header class="header">
+        <img src="img/logo-piscine%20salsabil-brun.png" alt="logo asbl salsabil">
+        <!-- nav staat voor navigatiebalk -->
+        <nav>
+            <!-- div staat voor document divison -->
+            <div>
+                <!-- ul staat voor ongeordende lijst -->
+                <ul class="menu">
+                    <!-- &npsb staat voor non-breaking space , met andere woorden voor een spatie -->
+                    <!-- bij a href zet je de linken van de verschillende pagina's, zodat je van één pagina naar het andere kan gaan -->
+                    <a href="INDEX.html"> Accueil &nbsp; </a>
+                    <a href="TARIFS-FR.html"> Tarifs &nbsp; </a>
+                    <a href="PERSONNEL-FR.html"> Personnel &nbsp; </a>
+                    <a href="CONTACT-FR.html" class="actief"> Contact &nbsp; </a>
+                    <a href="ACCESSIBILITE-FR.html"> Accessibilit&eacute; &nbsp; </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- le contenu du site -->
+    <div class="grand1">
+    <aside class="message-contact">
+        <div>
+            <!-- vierkant + invullen zoals naam, voornaam, etc -->
+            <form action="imane_toulni@hotmail.fr" id="usrform">
+
+                <p class="kleurContact"> Nom: * </p>
+                <p> <input type="text" name="nom" autofocus> </p>
+
+                <p class="kleurContact"> Pr&eacute;nom: * </p>
+                <p> <input type="text" name="prénom" autofocus> </p>
+
+                <p class="kleurContact"> Adresse mail: *</p>
+                <p> <input type="email" name="user_email"> </p>
+
+                <p class="kleurContact"> Message: * </p>
+                <textarea rows="4" cols="35" name="Message" form="usrform">
+                    </textarea>
+
+                <p> <input type="submit" value="Envoyez"> </p>
+                &nbsp;
+
+            </form>
+        </div>
+    </aside>
+
+    <div class="text-contact">
+        <aside class="aside1">
+            <h1 class="h1"> Contact </h1>
+            <h2 class="h2"> Contactez-nous !</h2>
+
+            <p class="p"> Une question ? contactez-nous via le formulaire ci-joint et nous vous r&eacute!;pondrons dans le plus bref d&eacute;lai.</p>
+
+            <h3 class="h3"> A.S.B.L Salsabil</h3>
+            <p class="p"> T&eacute;l&eacute;phone : +32 (02) 523 11 65 </p>
+
+            <div class="R">
+                <h3 class="tabel-contacts"> Heures d&apos;ouvertures </h3>
+
+                <table class="tabel">
+                    <!-- horaire -->
+                    <tr>
+                        <th colspan="3" class="center"> Samedi </th>
+                    </tr>
+
+                    <tr>
+                        <td class="center"> 17h20 - 18h20 </td>
+                        <td class="center"> 18h20 - 19h20 </td>
+                        <td class="center"> 19h20 - 20h20</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3 class="h3"> GSM & Whatsapp </h3>
+            <p class="p"> +32 (04) 485 62 28 48 </p>
+
+            <h3 class="h3"> E-mail </h3>
+            <p class="p"> info@salsabil.be </p>
+
+            <h3 class="h3"> Adresse </h3>
+            <p class="p"> Rue des grives n&deg;51 - 1070 Anderlecht </p>
+            <p class="p"> <b> BUS: </b>STIB ligne 75 arr&ecirc;t : CAMPUS CERIA </p>
+            <p class="p"> <b> METRO: </b> CERIA (ligne 5) arr&ecirc;t: CERIA </p>
+
+
+
+        </aside>
+    </div>
+        </div>
+    &nbsp;
+
+    <!-- de footer is het tegenovergestelde van de header, het is een blok beneden van de pagina, buiten de body -->
+    <!-- &copy slaat op het logo copyright -->
+
+    <footer> &copy; 2018 A.S.B.L. Salsabil Rahma Miloudi & Imane Toulni </footer>
+</body>
+</html>
