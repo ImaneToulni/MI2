@@ -1,0 +1,67 @@
+<! DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title> opdracht 1 bis </title>
+        
+        <script type="text/javascript">
+            function add()
+            {
+               var a = document.getElementById("t1").value;
+               var b = document.getElementById("t2").value;    
+            }
+            
+            function Optellen()
+            {
+                alert("a+b");
+            }
+            
+            function Aftrekken()
+            {
+                alert("a-b");
+
+            }
+            
+            function Vermenigvuldigen()
+            {
+                alert("a*b");
+            }
+            
+            function Delen()
+            {
+                alert("a/b");
+            }
+            
+            function berekening()
+            {
+                switch (value) {
+                   case "Optellen";
+                        text = "Het antwoord is: ";
+                        break; 
+                        
+                        case="Aftrekken";
+                        text="Het antwoord is: ";
+                        break;
+                        
+                        case="Vermenigvuldigen";
+                        text = "Het antwoord is: ";
+                        break; 
+                        
+                        case="Delen";
+                        text = "Het antwoord is: ";
+                        break; 
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <input type="text" name="" id="t1">
+        <input type="text" name="" id="t2">
+        <button onclick="add()"> Bereken </button> <br>
+        
+        <input type="radio" name="Optellen" value="Optellen"> Optellen <br>
+        <input type="radio" name="Aftrekken" value="Aftrekken"> Aftrekken <br>
+        <input type="radio" name="Vermenigvuldigen" value="Vermenigvuldigen"> Vermenigvuldigen <br>
+        <input type="radio" name="Delen" value="Delen"> Delen <br>
+    </body>
+</html>
