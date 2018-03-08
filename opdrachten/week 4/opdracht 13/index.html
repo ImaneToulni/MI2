@@ -1,0 +1,35 @@
+<! DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title> opdracht 13 </title>
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+    </head>
+    
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <script> 
+            $(document).ready(function(){
+                $("#flip").click(function(){ $("#panel").slideToggle("slow");});});
+        </script>
+        <h1> Welkom ! </h1>
+        <h2> Hier vind je data over het  gemeente Laken, gesitueerd in Bussel</h2>
+        <div id="flip">Druk op het balkje om meer te zien </div>
+        <div id="panel">
+            <p id="test"></p>
+            
+            <script>
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var myObj = JSON.parse(this.responseText);
+                        document.getElementById("test").innerHTML = myObj.name;}};
+                
+                xmlhttp.open("GET", "Edmond Tollenaere straat", true);
+                xmlhttp.send();
+            </script>
+            
+            <p>Bekijk de link via <a href="http://maps.googleapis.com/maps/api/geocode/json?address=Edmond%20Tollenaerestraat.%20Brussel,Belgie" target="_blank"> Edmond Tollenaere straat</a></p>
+        </div>
+    </body>
+</html>

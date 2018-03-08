@@ -1,0 +1,18 @@
+html{
+    background-color: darksalmon
+}
+h1{
+    color: navajowhite
+}
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: navajowhite;
+    color:darksalmon;
+    border: solid 2px ;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}

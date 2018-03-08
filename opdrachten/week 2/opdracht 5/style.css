@@ -1,0 +1,29 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+.rows{
+    position: relative;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.white, .black{
+    border: 1px solid black;
+    width: 5%;
+    height: 5%;
+    float: right;
+}
+
+.white{
+    background-color: white;
+}
+
+.black{
+    background-color: black;
+}
+
+.clear{
+    clear: both;
+}
