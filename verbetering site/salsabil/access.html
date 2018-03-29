@@ -1,0 +1,121 @@
+<!-- html document begint altijd met een ! + DOCTYPE -->
+<!DOCTYPE html>
+<!-- taal van de pagina zetten waar lang voor laguage staat -->
+<html lang="fr">
+
+<head>
+
+    <link rel="icon" href="./Pictures/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Access</title>
+    
+    <!-- html pagina met de css pagina linken -->
+    <link rel="stylesheet" href="./Style/style.css">
+    <style>
+        #Accessibilit&eacute; {
+            background-color: rgba(179, 111, 23, 0.829);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="headerDiv">
+            <!-- Logo Blok -->
+
+            <div class="blokImg">
+                <img src="./Pictures/logo.png" alt="Logo">
+            </div>
+
+            <!-- Navigatie balk -->
+            <div class="navBalk">
+                <!-- ul staat voor ongeordende lijst -->
+                <ul>
+                    <a href="index.html">
+                        <li id="Accueil">Accueil</li>
+                    </a>
+                    <a href="tarifs.html">
+                        <li id="Tarifs">Tarifs</li>
+                    </a>
+                    <a href="personnel.html">
+                        <li id="Personnel">Personnel</li>
+                    </a>
+                    <a href="contact.html">
+                        <li id="Contact">Contact</li>
+                    </a>
+                    <a href="access.html">
+                        <li id="Accessibilité">Accessibilit&eacute;</li>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <div id="InformationAccess">
+
+
+        <div id="Location">
+
+            <div class="chemin">
+                <p>La <strong>piscine</strong> est accessible &agrave toute personne. C&apos;est-&agrave;-dire que on peut facilement s&apos;y rendre en transport en commun tel que le m&eacute;tro ou le bus.</p>
+                <p>Si vous prenez le m&eacute;tro, prenez la <strong>ligne 5</strong> et descendez &agrave; l&apos;arr&ecirc;t CERIA. Le <strong>bus 75</strong> de la STIB est pas loin de port&eacute;e, vous pouvez descendre &agrave; l&apos;arr&ecirc;t <strong>CAMPUS CERIA</strong>.</p>
+                <p> La piscine est aussi facilement accessible via l&apos;autoroute. Prenez le ring de <strong>Bruxelles, sortie 16 : Sint-Pieters-Leeuw.</strong></p>
+                <p> Nous avons aussi une entr&eacute;e sp&eacute;cialement pour les personnes a mobilit&eacute; r&eacute;duite. C&apos;est une facilit&eacute; pour s&apos;y rendre facilement dans l&apos;eau.</p>
+            </div>
+
+
+            <div id="map"></div>
+        </div>
+    </div>
+
+
+
+    <!-- &copy - logo copyright -->
+    <footer class="footer">
+        <div class="footerText">
+            <p> &copy; 2018 A.S.B.L. Salsabil <span class="fontProNaam"> Rahma Miloudi </span> & <span class="fontProNaam">Imane Toulni</span></p>
+        </div>
+    </footer>
+    
+    <!--  google maps  -->
+    <script>
+        function initMap() {
+            var title = 'Piscine - Ceria';
+            var uluru = {
+                lat: 50.8160599,
+                lng: 4.2984033
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+                title: title
+            });
+            var infowindow = new google.maps.InfoWindow({
+                content: title
+            });
+            infowindow.open(map, marker);
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+        }
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMg0Dico5elQb3I1FHjQqVGX4-0SeFXw0&callback=initMap">
+
+
+    </script>
+
+
+</body>
+
+</html>

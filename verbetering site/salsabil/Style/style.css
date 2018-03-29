@@ -1,0 +1,972 @@
+@font-face {
+    font-family: ProFont;
+    src: url(./Fonts/Vapoteur.ttf);
+}
+
+@font-face {
+    font-family: ProFont3;
+    src: url(./Fonts/Chocolatines.ttf);
+}
+
+@font-face {
+    font-family: ProFont3;
+    src: url(./Fonts/La-chata-normal.ttf);
+}
+
+
+html {
+    background-color: rgba(160, 160, 160, 0.527);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: rgba(48, 46, 46, 0.774);
+    width: 100vw;
+    height: 15vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.headerDiv {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .blokImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+}
+
+header .navBalk {
+    width: 50vw;
+    display: flex;
+}
+
+header .navBalk ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+}
+
+.navBalk li {
+    font-family: ProFont2;
+    color: white;
+    background-color: rgb(199, 137, 5);
+    border-radius: 5px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    width: 6vw;
+    padding: 1em;
+    font-size: 1em;
+}
+
+.navBalk li:hover {
+
+    background-color: rgba(235, 181, 64, 0.568);
+    cursor: pointer;
+}
+
+#Information {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7.5%;
+    width: 100vw;
+
+}
+
+
+.WelcomeParagraph p {
+    color: white;
+    font-family: ProFont;
+    font-size: 3.5em;
+
+}
+
+
+
+/**************** InfoAccueil ***************/
+
+#PlusDinfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 5%;
+
+    background-color: gray;
+    width: 100vw;
+    height: 35vh;
+}
+
+#creationDiv {
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 25vh;
+    background-color: rgba(255, 255, 255, 0.856);
+    border-radius: 5%;
+    text-align: justify;
+    font-family: ProFont3;
+    border: 2px solid #ccc;
+    transition: transform .2s;
+    /* Animation */
+}
+
+#creationDiv:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.CouleurImportant {
+    color: rgb(161, 122, 48);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#creationDiv img {
+    width: 3vw;
+}
+
+#OffertDiv {
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    width: 20vw;
+    height: 25vh;
+    background-color: rgba(255, 255, 255, 0.856);
+    border-radius: 5%;
+    text-align: justify;
+    font-family: ProFont3;
+    border: 2px solid #ccc;
+    transition: transform .2s;
+    /* Animation */
+}
+
+#OffertDiv:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#OffertDiv img {
+    width: 3vw;
+}
+
+
+
+/*************** TABEL TARIF **************/
+
+#InformationTarifs {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7.5%;
+    width: 100vw;
+
+}
+
+#Abonnements {
+    width: 40vw;
+}
+
+#Abonnements h1 {
+    color: orangered;
+    text-align: center;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+th {
+    text-align: center;
+    background-color: orange;
+}
+
+td {
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+
+
+/***************** Activites *************/
+
+#Activites {
+    width: 40vw;
+    background-color: rgba(48, 46, 46, 0.774);
+    padding: 2%;
+    border-radius: 5%;
+}
+
+#Activites h1 {
+    color: orangered;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#Activites p {
+    color: white;
+    font-size: 1em;
+    text-align: justify;
+    font-family: sans-serif
+}
+
+#Activites .DetailsImportant {
+    color: tomato;
+    font-weight: bold;
+}
+
+
+
+/****************** Personnel *************/
+
+#InformationPersonnel {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7.5%;
+    width: 100vw;
+
+}
+
+.PersonnelInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 1%;
+}
+
+
+#InformationPersonnel h1 {
+    font-size: 1em;
+    font-family: ProFont3;
+    color: tomato;
+
+}
+
+.PersonnelMiloudi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.descript {
+    position: relative;
+    background: #83898d;
+    border: 2px solid #b88d56;
+    color: white;
+    padding: 1%;
+}
+
+.descript:after,
+.arrow_box:before {
+    bottom: 100%;
+    left: 50.2%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.descript:after {
+    border-color: rgba(82, 92, 99, 0);
+    border-bottom-color: #415866;
+    border-width: 30px;
+    margin-left: -30px;
+}
+
+.descript:before {
+    border-color: rgba(184, 141, 86, 0);
+    border-bottom-color: #b88d56;
+    border-width: 36px;
+    margin-left: -36px;
+}
+
+
+.PersonnelMariam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.PersonnelMiloudi img {
+    width: 10vw;
+    margin-bottom: 5%;
+}
+
+.PersonnelMariam img {
+    width: 10vw;
+    margin-bottom: 3%;
+}
+
+/***************** Contact ***************/
+
+#formulaire {
+
+    background-color: rgba(75, 74, 74, 0.774);
+    padding: 2%;
+    border-radius: 5%;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 1em;
+}
+
+#formulaire {
+    width: 40vw;
+}
+
+#formulaire input {
+    padding: 1%;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#formulaire label {
+    color: orangered
+}
+
+#formulaire button {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 3%;
+    padding: 2%;
+}
+
+#formulaire input:focus {
+    border: 2px solid orangered;
+}
+
+#formulaire textarea:focus {
+    border: 2px solid orangered;
+}
+
+#formulaire button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+#InformationContact {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7.5%;
+    width: 100vw;
+}
+
+#ContactInfo {
+    background-color: rgba(75, 74, 74, 0.774);
+    padding: 2%;
+    border-radius: 5%;
+    width: 40vw;
+}
+
+#ContactInfo h1 {
+    color: rgb(218, 81, 28);
+    font-size: 2em;
+    text-align: center;
+}
+
+#ContactInfo h2 {
+    color: rgb(228, 77, 22);
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#ContactInfo h3 {
+    color: rgb(228, 77, 22);
+    font-size: 1.05em;
+    text-align: left;
+}
+
+#ContactInfo p {
+    color: white;
+    font-size: 1em;
+    text-align: left;
+}
+
+
+
+
+
+/*************** Access ****************/
+
+#InformationAccess {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7.5%;
+    width: 100vw;
+}
+
+
+#Location {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80vw;
+}
+
+.chemin {
+
+    background-color: white;
+    padding: 1%;
+    width: 40vw;
+}
+
+#map {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 40vw;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/***************** FOOTER *******************/
+
+.footer {
+    width: 100vw;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.623);
+    overflow: visible;
+
+}
+
+.footerText {
+    font-family: ProFont2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fontProNaam {
+    font-family: ProFont;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+
+
+/****************************** SLIDESHOW *******************************/
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none
+}
+
+.mySlides img {
+    width: 70vw;
+    height: 50vh;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    height: 55vh;
+}
+
+
+.prev,
+.next {
+    position: absolute;
+    cursor: pointer;
+    top: 45%;
+    background-color: rgba(70, 70, 70, 0.603);
+    padding: 26px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    text-align: center;
+}
+
+
+#DotDiv {
+    display: flex;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next {
+        font-size: 11px
+    }
+}
+
+
+/******************** MEDIAQUERY om de website responsive maken ************************/
+
+@media screen and (max-width:680px) {
+
+    .prev,
+    .next {
+        position: absolute;
+        cursor: pointer;
+        top: 125%;
+        background-color: rgba(70, 70, 70, 0.603);
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .WelcomeParagraph {
+        margin-top: 50vw;
+    }
+
+    .headerDiv {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    header .blokImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+    }
+
+    header .navBalk {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+    }
+
+    header .navBalk ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 0;
+    }
+
+
+    .navBalk li {
+        font-family: ProFont2;
+        color: white;
+        background-color: rgb(199, 137, 5);
+        border-radius: 5px;
+        list-style: none;
+        text-align: center;
+        width: 80vw;
+        padding: 1.5em;
+        font-size: 1em;
+    }
+
+    .footerText {
+        font-family: ProFont2;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fontProNaam {
+        font-family: ProFont;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+
+}
+
+
+/* responsive */
+@media screen and (max-width:600px) {
+
+    #InformationPersonnel h1 {
+        text-align: center;
+    }
+
+    #InformationPersonnel img {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 35vw;
+    }
+    #InformationPersonnel {
+
+        margin-top: 150vw;
+    }
+
+
+    #InformationAccess {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin-top: 150vw;
+    }
+
+    #Location {
+        width: 100vw;
+    }
+
+    .chemin {
+        width: 100vw;
+        padding: 2%;
+        margin: 2%;
+    }
+
+    #map {
+        width: 100vw;
+        margin: 2%;
+    }
+
+    #InformationContact {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin-top: 150vw;
+    }
+
+    #ContactInfo {
+        width: 100vw;
+    }
+
+    #formulaire {
+        margin: 5%;
+        width: 100%;
+    }
+
+    #InformationTarifs {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin-top: 150vw;
+    }
+
+    #Abonnements {
+        width: 100vw;
+        padding: 1%;
+    }
+
+    #Activites {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        width: 100vw;
+        padding: 1%;
+    }
+
+    #PlusDinfo {
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+
+        background-color: gray;
+
+    }
+
+    #creationDiv {
+        padding-left: 1%;
+        padding-right: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+        height: 25vh;
+        background-color: rgba(255, 255, 255, 0.856);
+        border-radius: 5%;
+        text-align: justify;
+        font-family: ProFont3;
+        border: 2px solid #ccc;
+        transition: transform .2s;
+        /* Animation */
+    }
+
+    #creationDiv:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    .CouleurImportant {
+        color: rgb(161, 122, 48);
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    #creationDiv img {
+        width: 8vw;
+
+    }
+
+    #OffertDiv {
+        padding-left: 1%;
+        padding-right: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9em;
+        width: 70vw;
+        height: 25vh;
+        background-color: rgba(255, 255, 255, 0.856);
+        border-radius: 5%;
+        text-align: justify;
+        font-family: ProFont3;
+        border: 2px solid #ccc;
+        transition: transform .2s;
+        /* Animation */
+    }
+
+    #OffertDiv:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    #OffertDiv img {
+        margin-top: 6%;
+        width: 8vw;
+    }
+
+
+    .WelcomeParagraph {
+        margin-top: 135vw;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+
+    .WelcomeParagraph p {
+        font-family: ProFont3;
+        color: orange;
+        font-size: 2em;
+    }
+
+    .header {
+        height: 80vh;
+    }
+    .headerDiv {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #WelcomeParagraph {
+        margin-top: 100%;
+    }
+
+    header .blokImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+    }
+
+    header .navBalk {
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+    }
+
+    header .navBalk ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 0;
+    }
+
+
+    .navBalk li {
+        font-family: ProFont2;
+        color: white;
+        background-color: rgb(199, 137, 5);
+        border-radius: 5px;
+        list-style: none;
+        text-align: center;
+        width: 80vw;
+        padding: 1.5em;
+        font-size: 1em;
+    }
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    #creationDiv {
+        width: 100%;
+    }
+
+    #OffertDiv {
+        width: 100%;
+        padding-bottom: 5%;
+    }
+
+    #OffertDiv img {
+        margin-top: 10%;
+    }
+
+}

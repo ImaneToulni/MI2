@@ -1,0 +1,154 @@
+<!-- html document begint altijd met een ! + DOCTYPE -->
+<!DOCTYPE html>
+<!-- taal van de pagina zetten waar lang voor laguage staat -->
+<html lang="fr">
+
+<head>
+
+    <link rel="icon" href="./Pictures/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accueil</title>
+    
+    <!-- html pagina met de css pagina linken -->
+    <link rel="stylesheet" href="./Style/style.css">
+    <style>
+        #Accueil {
+            background-color: rgba(179, 111, 23, 0.829);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="headerDiv">
+            <!-- Logo Blok -->
+
+            <div class="blokImg">
+                <img src="./Pictures/logo.png" alt="Logo">
+            </div>
+
+            <!-- Navigatie balk -->
+            <div class="navBalk">
+                <!-- ul staat voor ongeordende lijst -->
+                <ul>
+                    <a href="index.html">
+                        <li id="Accueil">Accueil</li>
+                    </a>
+                    <a href="tarifs.html">
+                        <li id="Tarifs">Tarifs</li>
+                    </a>
+                    <a href="personnel.html">
+                        <li id="Personnel">Personnel</li>
+                    </a>
+                    <a href="contact.html">
+                        <li id="Contact">Contact</li>
+                    </a>
+                    <a href="access.html">
+                        <li id="Accessibilité">Accessibilit&eacute;</li>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <div id="Information">
+        <!-- slideshow -->
+
+        <div class="WelcomeParagraph">
+            <p>Bienvenue chez l'.a.s.b.l Salsabil</p>
+        </div>
+
+        <div class="slideshow-container">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <div class="mySlides fade">
+                <img src="./Pictures/grand.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./Pictures/petit.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./Pictures/ceria.jpg">
+            </div>
+            
+            <div id="DotDiv">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+        <div id="PlusDinfo">
+            <div id="creationDiv">
+                <img class="creationImg" src="./Pictures/creation.png" alt="Creation logo" />
+                <p>L&apos;asbl Salsabil &agrave; &eacute;t&eacute; cr&eacute;&eacute; en octobre <span class="CouleurImportant">2012</span> afin de permettre de faire une activit&eacute; commune femmes et enfants pour leurs &eacute;panouissement.</p>
+            </div>
+
+            <div id="OffertDiv">
+                <img class="OffertImg" src="./Pictures/gift.png" alt="offert" />
+                <p> Nous <span class="CouleurImportant">offrons</span> la possibilit&eacute; de faire la nage libre, d&apos;apprendre ou perfectionner la nage, initiation &agrave; l&apos;eau (phobies, peur) et l&apos;aquagym. A l&apos;asbl Salsabil vous avez des maitres nageuses et monitrices comp&eacute;tentes.</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- &copy - logo copyright -->
+    <footer class="footer">
+        <div class="footerText">
+            <p> &copy; 2018 A.S.B.L. Salsabil <span class="fontProNaam"> Rahma Miloudi </span> & <span class="fontProNaam">Imane Toulni</span></p>
+        </div>
+    </footer>
+    
+    <!-- slideshow script -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!-- html document begint altijd met een ! + DOCTYPE -->
+<!DOCTYPE html>
+<!-- taal van de pagina zetten waar lang voor laguage staat -->
+<html lang="fr">
+
+
+<head>
+
+    <link rel="icon" href="./Pictures/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact</title>
+    
+    <!-- html pagina met de css pagina linken -->
+    <!-- html pagina met de css pagina linken -->
+    <link rel="stylesheet" href="./Style/style.css">
+    <style>
+        #Contact {
+            background-color: rgba(179, 111, 23, 0.829);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="headerDiv">
+            <!-- Logo Blok -->
+
+            <div class="blokImg">
+                <img src="./Pictures/logo.png" alt="Logo">
+            </div>
+
+            <!-- Navigatie balk -->
+            <div class="navBalk">
+                <!-- ul staat voor ongeordende lijst -->
+                <ul>
+                    <a href="index.html">
+                        <li id="Accueil">Accueil</li>
+                    </a>
+                    <a href="tarifs.html">
+                        <li id="Tarifs">Tarifs</li>
+                    </a>
+                    <a href="personnel.html">
+                        <li id="Personnel">Personnel</li>
+                    </a>
+                    <a href="contact.html">
+                        <li id="Contact">Contact</li>
+                    </a>
+                    <a href="access.html">
+                        <li id="Accessibilité">Accessibilit&eacute;</li>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <div id="InformationContact">
+
+        <div id="ContactInfo">
+            <h1>Contact</h1>
+            <h2>Contactez-nous !</h2>
+            <p>Une question ? contactez-nous via le formulaire ci-joint et nous vous r&eacute;pondrons dans le plus bref d&eacute;lai.</p>
+
+            <h3>A.S.B.L Salsabil</h3>
+            <p>T&eacute;l&eacute;phone : +32 (02) 523 11 65</p>
+
+            <h3>GSM & Whatsapp</h3>
+            <p>T&eacute;l&eacute;phone : +32 (04) 485 62 28 48</p>
+
+            <h3>E-mail</h3>
+            <p>info@salsabil.be </p>
+
+            <h3>Adresse</h3>
+            <p>Rue des grives n°51 - 1070 Anderlecht</p>
+            <p><strong>Bus:</strong> STIB ligne 75 arr&ecirc;t - CAMPUS CERIA</p>
+            <p><strong>M&eacute;tro:</strong> STIB ligne 5 arr&ecirc;t - CERIA</p>
+
+        </div>
+
+        <div id="formulaire">
+            <form>
+                <label>Nom  *</label>
+                <input id="nom" type="text" name="first"><br />
+                <label>Prénom  *</label>
+                <input id="prenom" type="text" name="last"><br />
+                <label>Adresse mail: *</label>
+                <input id="email" type="text" name="email"><br />
+                <label>Message: *</label><br/>
+                <textarea id="message" rows="4" cols="50" placeholder="Ecrivez votre message ici "> </textarea>
+                <button id="Envoyer">Envoyer</button>
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- &copy - logo copyright -->
+    <footer class="footer">
+        <div class="footerText">
+            <p> &copy; 2018 A.S.B.L. Salsabil <span class="fontProNaam"> Rahma Miloudi </span> & <span class="fontProNaam">Imane Toulni</span></p>
+        </div>
+    </footer>
+    
+    <!--  bericht om alle velden in te vullen -->
+    <script>
+        document.getElementById('Envoyer').addEventListener('click', controle);
+
+        function controle() {
+            var date = new Date();
+
+            var nom = document.getElementById('nom').value;
+            var prenom = document.getElementById('prenom').value;
+            var email = document.getElementById('email').value;
+            var mess = document.getElementById('message').value;
+
+            if (nom != "" && prenom != "" && email != "" && mess != "") {
+                alert("Date: " + date.toDateString() + " " + date.toLocaleTimeString() + "\n" + "nom: " + nom + "\n" + "Prenom: " + prenom + "\n" + "Email: " + email + "\n" + "Message: " + mess);
+            } else {
+                alert('veuillez remplir tous les champs merci!');
+            }
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>
