@@ -1,0 +1,315 @@
+/* index */
+
+@font-face {
+    font-family: ProFont;
+    src: url(./fonts/Pixeled.ttf);
+}
+
+html {
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 70vw;
+    height: 50vh;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 55vh;
+    padding-top: 12%;
+}
+
+.prev,
+.next {
+    position: absolute;
+    cursor: pointer;
+    top: 45%;
+    background-color: rgba(70, 70, 70, 0.603);
+    padding: 26px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    text-align: center;
+}
+
+.text-block {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 35%;
+    right: 20px;
+    color: white;
+    padding-left: 0px;
+    padding-right: 17%;
+}
+
+.text-block-1 {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 32%;
+    right: 20px;
+    color: white;
+    padding-right: 35%;
+}
+
+button {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 32%;
+    right: 10px;
+    width: 10%;
+    float: right;
+    margin-right: 15%;
+}
+
+#DotDiv {
+    display: flex;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/*spel 1*/
+
+#grootte {
+    margin-top: 5%;
+    padding-right: 0%;
+    text-align: center;
+    width: 70%;
+    float: right;
+}
+
+
+.rij {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.zwart,
+.coordinaat,
+input,
+.wit {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    float: right;
+    padding-top: 1%;
+}
+
+.zwart {
+    background-color: black;
+}
+
+input {
+    font-size: 100%;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.coordinaat {
+    background-color: gainsboro;
+}
+
+.raadsel {
+    float: left;
+    color: white;
+    width: 30%;
+    padding-top: 3%;
+    padding-left: 4%;
+}
+
+h1 {
+    font-size: 100%;
+}
+
+#crack {
+    font-family: ProFont;
+    color: white;
+    width: 60%;
+    float: right;
+    padding-right: 10%;
+
+}
+
+#cth {
+    margin-right: 35%;
+    float: right;
+    margin-top: 5%;
+}
+
+.code {
+    width: 10%;
+    height: 90px;
+    text-align: center;
+    margin-top: 8%;
+
+}
+
+#box {
+    padding-right: 20%;
+    float: right;
+}
+
+.wit {
+    background-color: white;
+    text-align: center;
+}
+
+#sudokus {
+    width: 65%;
+    height: 50%;
+    padding-top: 12%;
+}
+
+#sudoku {
+    float: left;
+    padding-left: 10%;
+}
+
+#sudoku1 {
+    float: right;
+    padding-right: 10%;
+}
+
+#spel3 {
+    padding-left: 40%;
+    padding-top: 20%;
+    font-family: ProFont;
+    color: white;
+}
+
+#Box1 {
+
+    position: absolute;
+    bottom: 8%;
+    right: 10px;
+    width: 35%;
+    float: right;
+    margin-right: 20%;
+    color: white;
+}
+
+#Box2 {
+    position: absolute;
+    bottom: 48%;
+    right: 8px;
+    width: 35%;
+    float: right;
+    margin-right: 10%;
+    color: white;
+}
+
+#Crack2 {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 60%;
+    right: 6px;
+    width: 28%;
+    float: right;
+    color: white;
+}
+
+#Button2 {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 12%;
+    right: 4px;
+    left: 7%; 
+    width: 100%;
+}
+
+#Crack1 {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 22%;
+    right: 140px;
+    width: 28%;
+    float: right;
+    color: white;
+}
+
+#Button3 {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 42%;
+    right: Opx;
+    width: 100%;
+    float: right;
+}
