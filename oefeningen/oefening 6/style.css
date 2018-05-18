@@ -1,0 +1,18 @@
+html {
+    background-color: rgb(150, 113, 129);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(162, 156, 148);
+    font-family: fantasy;
+}
+
+h2 {
+    color: rgb(162, 156, 148);
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}

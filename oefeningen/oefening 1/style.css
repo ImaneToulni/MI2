@@ -1,0 +1,18 @@
+html{
+    background-color: antiquewhite;
+}
+
+h1{
+    text-align: center;
+    color: firebrick;
+    font-family: fantasy;
+}
+
+h2{
+    color: dimgrey;
+    font-size: 20px;
+}
+
+p{
+    font-size: 16px;
+}

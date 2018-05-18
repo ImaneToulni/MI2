@@ -1,0 +1,37 @@
+<! DOCTYPE html>
+<html lang="nl">
+    <head>
+    <title> opdracht 13 </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<h1> Informatie over: Edmond Tollenaere straat</h1>
+
+    <p id="info"> </p>
+    
+    
+    <p>Om meer data te zien  druk op <a href="http://maps.googleapis.com/maps/api/geocode/json?address=Edmond%20Tollenaerestraat.%20Brussel,Belgie" target="_blank"> Meer zien ’</a></p>
+    
+    <script>
+        
+        
+        var land = "Land = België";
+        var gewest = "Gewest = Brussel Hoofdstedelijk Gewest";
+
+        var gemeente = "Gemeents = Brussel";
+        var postcode = "Postcode = 1020";
+
+        var a = "Noord-Oos Latitude = 50,9";
+        var b = "Noord-Oost Longitude 4,3";
+
+        var c = "Zuid-West Latitude 50,9";
+        var d = "Zuid-West Longitude 4,3";
+        
+        
+        document.getElementById("info").innerHTML =
+        land + "<br>" + gewest + "<br>" + gemeente + "<br>" + postcode + "<br>" + a + "<br>" + b + "<br>" + c + "<br>" + d;
+    </script>
+
+</body>
+</html>

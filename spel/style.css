@@ -1,12 +1,13 @@
-/* index */
+html {
+    background-color: tan;
+}
+
+
+/* index pagina */
 
 @font-face {
     font-family: ProFont;
     src: url(./fonts/Pixeled.ttf);
-}
-
-html {
-    background-color: black;
 }
 
 * {
@@ -142,7 +143,13 @@ button {
     }
 }
 
-/*spel 1*/
+
+/*spel 1 (kruiswoordraadsel) */
+
+#spel1 {
+    width: 100%;
+
+}
 
 #grootte {
     margin-top: 5%;
@@ -162,7 +169,8 @@ button {
 .zwart,
 .coordinaat,
 input,
-.wit {
+.wit,
+.rood {
     border: 1px solid black;
     width: 40px;
     height: 40px;
@@ -215,8 +223,8 @@ h1 {
 }
 
 .code {
-    width: 10%;
-    height: 90px;
+    width: 9%;
+    height: 70px;
     text-align: center;
     margin-top: 8%;
 
@@ -248,58 +256,57 @@ h1 {
     padding-right: 10%;
 }
 
-#spel3 {
-    padding-left: 40%;
-    padding-top: 20%;
-    font-family: ProFont;
-    color: white;
-}
+
 
 #Box1 {
-
     position: absolute;
-    bottom: 8%;
+    bottom: 10%;
     right: 10px;
     width: 35%;
-    float: right;
-    margin-right: 20%;
+    margin-right: 18%;
     color: white;
 }
 
-#Box2 {
-    position: absolute;
-    bottom: 48%;
-    right: 8px;
-    width: 35%;
-    float: right;
-    margin-right: 10%;
-    color: white;
-}
-
-#Crack2 {
-    font-family: ProFont;
-    position: absolute;
-    bottom: 60%;
-    right: 6px;
-    width: 28%;
-    float: right;
-    color: white;
-}
 
 #Button2 {
     font-family: ProFont;
     position: absolute;
     bottom: 12%;
-    right: 4px;
-    left: 7%; 
-    width: 100%;
+    left: 24%;
+    width: 80%;
+
 }
+
 
 #Crack1 {
     font-family: ProFont;
     position: absolute;
-    bottom: 22%;
-    right: 140px;
+    bottom: 20%;
+    right: 145px;
+    width: 30%;
+    float: right;
+    color: white;
+}
+
+
+/* spel 2 (sudoku)*/
+
+#Box2 {
+    position: absolute;
+    bottom: 52%;
+    right: 8px;
+    width: 35%;
+    float: right;
+    margin-right: 10%;
+    color: white;
+    margin-top: 20%;
+}
+
+#Crack2 {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 63%;
+    right: 12%;
     width: 28%;
     float: right;
     color: white;
@@ -308,8 +315,104 @@ h1 {
 #Button3 {
     font-family: ProFont;
     position: absolute;
-    bottom: 42%;
-    right: Opx;
-    width: 100%;
+    bottom: 41%;
+    right: 21.7%;
+    width: 50%;
     float: right;
 }
+
+#spel3 {
+    padding-left: 40%;
+    padding-top: 20%;
+    font-family: ProFont;
+    color: white;
+}
+
+.rood {
+    color: red;
+    text-align: center;
+    padding-top: 3%;
+    background-color: white;
+
+}
+
+#buttonSudoku {
+    position: absolute;
+    bottom: 55%;
+    right: 8%;
+    float: right;
+    margin-right: 15%;
+}
+
+/* spel 3 (raadsel)*/
+
+#Box3 {
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 18%;
+}
+
+.cijfer {
+    color: white;
+    float: left;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+}
+
+.paragraaf {
+    padding-left: 60px;
+}
+
+#Box4 {
+    position: absolute;
+    bottom: 55%;
+    right: 12%;
+    width: 35%;
+    float: right;
+    margin-right: 15%;
+    color: white;
+    margin-top: 20%;
+}
+
+#buttonControle {
+    right: 14%;
+    bottom: 48%;
+    width: 7%;
+
+}
+
+#Crack3 {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 70%;
+    right: 8%;
+    width: 28%;
+    float: right;
+    color: white;
+}
+
+#Box5 {
+    position: absolute;
+    bottom: 63%;
+    right: 5%;
+    width: 35%;
+    float: right;
+    margin-right: 15%;
+    color: white;
+    margin-top: 20%;
+}
+
+#Button4 {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 48%;
+    right: 17%;
+    width: 50%;
+    float: right;
+}
+
+

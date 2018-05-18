@@ -1,0 +1,153 @@
+html {
+    background-color: #cdb79e;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 50%;
+    height: 55%;
+    padding-top: 2%;
+    padding-left: 6%;
+}
+
+@font-face {
+    font-family: font1;
+    src: url(./font/Vapoteur.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(./font/Chocolatines.ttf);
+}
+
+@font-face {
+    font-family: font3;
+    src: url(./font/La-chata-normal.ttf);
+
+
+
+}
+
+h1 {
+    text-align: center;
+    font-family: font1;
+    font-size: 60px;
+}
+
+.text1 {
+    width: 30%;
+    height: 40%;
+    float: right;
+    padding-top: 10%;
+    padding-right: 10%;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.previous,
+.next {
+    padding-top: 5px;
+    border-radius: 10px;
+    width: 3%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.previous {
+    background-color: #8b7d6b;
+    color: white;
+}
+
+.next {
+    background-color: #8b7d6b;
+    color: white;
+    float: right;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 5px;
+    padding-top: 3%;
+    padding-bottom: 1.5%;
+    background-color: #8b7d6b;
+    width: 99%;
+
+}
+
+
+
+/* slideshow */
+
+/* nav */
+
+.navBalk {
+    background-color: #ffe4c4;
+    justify-content: center;
+    display: flex;
+}
+
+header .navBalk {
+    width: 50vw;
+    display: flex;
+}
+
+header .navBalk ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+}
+
+.navBalk li {
+    font-family: ProFont2;
+    color: black;
+    background-color: #e2cab6;
+    border-radius: 5px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    width: 8vw;
+    padding: 1em;
+    font-size: 1em;
+}
+
+.navBalk li:hover {
+
+    background-color: rgba(100, 89, 77, 0.568);
+    cursor: pointer;
+}
+
+
+/*  oefeningen */
+
+#groot {
+    width: 100%;
+    height: 85%;
+    padding-left: 8%;
+}
+
+.grid-container {
+    display: inline-grid;
+
+    grid-template-columns: auto auto auto;
+    background-color: #fffbf7;
+    width: 90%;
+    padding: 2px;
+}
+
+.grid-item {
+    border: 1px solid rgba(55, 49, 42, 0.8);
+    padding: 4px;
+    font-size: 18px;
+    text-align: center;
+
+}

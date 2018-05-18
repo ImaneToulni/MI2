@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- html gedeelte -->
     <div class="slideshow-container">
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <div class="mySlides fade">
@@ -38,7 +39,6 @@
             </div>
 
             <div id="Next">
-
                 <button type="button"> <a href="spel1.html"><b> Next </b></a> </button>
             </div>
 
@@ -50,15 +50,13 @@
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
-
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
     </div>
 
-
-
-    <!-- slideshow script -->
+    <!--    slideshow,  bij het gebruik van javaScript, gebruik je best "use strict";  -->
     <script>
+        "use strict";
+
         var slideIndex = 1;
         showSlides(slideIndex);
 
