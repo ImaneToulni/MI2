@@ -1,0 +1,418 @@
+html {
+    background-color: tan;
+}
+
+
+/* index pagina */
+
+@font-face {
+    font-family: ProFont;
+    src: url(./fonts/Pixeled.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 70vw;
+    height: 50vh;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 55vh;
+    padding-top: 12%;
+}
+
+.prev,
+.next {
+    position: absolute;
+    cursor: pointer;
+    top: 45%;
+    background-color: rgba(70, 70, 70, 0.603);
+    padding: 26px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    text-align: center;
+}
+
+.text-block {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 35%;
+    right: 20px;
+    color: white;
+    padding-left: 0px;
+    padding-right: 17%;
+}
+
+.text-block-1 {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 32%;
+    right: 20px;
+    color: white;
+    padding-right: 35%;
+}
+
+button {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 32%;
+    right: 10px;
+    width: 10%;
+    float: right;
+    margin-right: 15%;
+}
+
+#DotDiv {
+    display: flex;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/*spel 1 (kruiswoordraadsel) */
+
+#spel1 {
+    width: 100%;
+
+}
+
+#grootte {
+    margin-top: 5%;
+    padding-right: 0%;
+    text-align: center;
+    width: 70%;
+    float: right;
+}
+
+
+.rij {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.zwart,
+.coordinaat,
+input,
+.wit,
+.rood {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    float: right;
+    padding-top: 1%;
+}
+
+.zwart {
+    background-color: black;
+}
+
+input {
+    font-size: 100%;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.coordinaat {
+    background-color: gainsboro;
+}
+
+.raadsel {
+    float: left;
+    color: white;
+    width: 30%;
+    padding-top: 3%;
+    padding-left: 4%;
+}
+
+h1 {
+    font-size: 100%;
+}
+
+#crack {
+    font-family: ProFont;
+    color: white;
+    width: 60%;
+    float: right;
+    padding-right: 10%;
+
+}
+
+#cth {
+    margin-right: 35%;
+    float: right;
+    margin-top: 5%;
+}
+
+.code {
+    width: 9%;
+    height: 70px;
+    text-align: center;
+    margin-top: 8%;
+
+}
+
+#box {
+    padding-right: 20%;
+    float: right;
+}
+
+.wit {
+    background-color: white;
+    text-align: center;
+}
+
+#sudokus {
+    width: 65%;
+    height: 50%;
+    padding-top: 12%;
+}
+
+#sudoku {
+    float: left;
+    padding-left: 10%;
+}
+
+#sudoku1 {
+    float: right;
+    padding-right: 10%;
+}
+
+
+
+#Box1 {
+    position: absolute;
+    bottom: 10%;
+    right: 10px;
+    width: 35%;
+    margin-right: 18%;
+    color: white;
+}
+
+
+#Button2 {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 12%;
+    left: 24%;
+    width: 80%;
+
+}
+
+
+#Crack1 {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 20%;
+    right: 145px;
+    width: 30%;
+    float: right;
+    color: white;
+}
+
+
+/* spel 2 (sudoku)*/
+
+#Box2 {
+    position: absolute;
+    bottom: 52%;
+    right: 8px;
+    width: 35%;
+    float: right;
+    margin-right: 10%;
+    color: white;
+    margin-top: 20%;
+}
+
+#Crack2 {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 63%;
+    right: 12%;
+    width: 28%;
+    float: right;
+    color: white;
+}
+
+#Button3 {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 41%;
+    right: 21.7%;
+    width: 50%;
+    float: right;
+}
+
+#spel3 {
+    padding-left: 40%;
+    padding-top: 20%;
+    font-family: ProFont;
+    color: white;
+}
+
+.rood {
+    color: red;
+    text-align: center;
+    padding-top: 3%;
+    background-color: white;
+
+}
+
+#buttonSudoku {
+    position: absolute;
+    bottom: 55%;
+    right: 8%;
+    float: right;
+    margin-right: 15%;
+}
+
+/* spel 3 (raadsel)*/
+
+#Box3 {
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 18%;
+}
+
+.cijfer {
+    color: white;
+    float: left;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+}
+
+.paragraaf {
+    padding-left: 60px;
+}
+
+#Box4 {
+    position: absolute;
+    bottom: 55%;
+    right: 12%;
+    width: 35%;
+    float: right;
+    margin-right: 15%;
+    color: white;
+    margin-top: 20%;
+}
+
+#buttonControle {
+    right: 14%;
+    bottom: 48%;
+    width: 7%;
+
+}
+
+#Crack3 {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 70%;
+    right: 8%;
+    width: 28%;
+    float: right;
+    color: white;
+}
+
+#Box5 {
+    position: absolute;
+    bottom: 63%;
+    right: 5%;
+    width: 35%;
+    float: right;
+    margin-right: 15%;
+    color: white;
+    margin-top: 20%;
+}
+
+#Button4 {
+    font-family: ProFont;
+    position: absolute;
+    bottom: 48%;
+    right: 17%;
+    width: 50%;
+    float: right;
+}
+
+

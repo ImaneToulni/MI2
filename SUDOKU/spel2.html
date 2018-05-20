@@ -1,0 +1,1626 @@
+<!-- html document begint altijd met een ! + DOCTYPE -->
+<!DOCTYPE html>
+<!-- taal van de pagina zetten waar lang voor laguage staat -->
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> twee sudokus (spel2) </title>
+    <!-- html pagina met de css pagina linken -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--  html gedeelte  -->
+
+    <div id="sudokus">
+        <div id="sudoku">
+
+            <!-- Rij 1    -->
+            <!--    klasse clear -> rij  wordt mooi onder  elkaar weergegeven  -->
+
+            <div class="clear"></div>
+            <div class="row">
+                <input id="cijfer1" maxlength="1" type="text" style="background-color: brown;">
+                <input id="cijfer2" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer3" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer4" maxlength="1" type="text">
+                <input id="cijfer5" maxlength="1" type="text">
+                <input id="cijfer6" maxlength="1" type="text">
+                <input id="cijfer7" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood" style="background-color: burlywood;">3</div>
+                <input id="cijfer8" maxlength="1" type="text" style="background-color: burlywood;">
+            </div>
+
+            <!-- Rij 2    -->
+
+            <div class="clear"></div>
+            <div class="row">
+                <input id="cijfer9" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer10" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer11" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood">5</div>
+                <div class="rood">9</div>
+                <div class="rood">1</div>
+                <input id="cijfer12" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer13" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer14" maxlength="1" type="text" style="background-color: burlywood;">
+            </div>
+            <div class="clear"></div>
+
+
+            <!-- Rij 3   -->
+            <div class="clear"></div>
+            <div class="row">
+                <input id="cijfer15" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood" style="background-color: burlywood;">6</div>
+                <input id="cijfer16" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer17" maxlength="1" type="text">
+                <input id="cijfer18" maxlength="1" type="text">
+                <input id="cijfer19" maxlength="1" type="text">
+                <div class="rood" style="background-color: burlywood;">8</div>
+                <div class="rood" style="background-color: burlywood;">9</div>
+                <input id="cijfer20" maxlength="1" type="text" style="background-color: brown;">
+            </div>
+
+            <!-- Rij 4   -->
+
+            <div class="clear"></div>
+            <div class="row">
+                <input id="cijfer21" maxlength="1" type="text">
+                <input id="cijfer22" maxlength="1" type="text">
+                <input id="cijfer23" maxlength="1" type="text">
+                <input id="cijfer24" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood" style="background-color: burlywood;">6</div>
+                <input id="cijfer25" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer26" maxlength="1" type="text">
+                <input id="cijfer27" maxlength="1" type="text">
+                <div class="rood">8</div>
+            </div>
+            <div class="clear"></div>
+
+
+            <!-- Rij 5   -->
+
+            <div class="row">
+                <div class="rood">1</div>
+                <input id="cijfer28" maxlength="1" type="text">
+                <input id="cijfer29" maxlength="1" type="text">
+                <div class="rood" style="background-color: burlywood;">3</div>
+                <input cid="cijfer30" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer31" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer32" maxlength="1" type="text">
+                <input id="cijfer33" maxlength="1" type="text">
+                <div class="rood">4</div>
+            </div>
+            <div class="clear"></div>
+
+            <!-- Rij 6    -->
+
+            <div class="row">
+                <input id="cijfer34" maxlength="1" type="text">
+                <input id="cijfer35" maxlength="1" type="text">
+                <input id="cijfer36" maxlength="1" type="text">
+                <input id="cijfer37" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood" style="background-color: burlywood;">2</div>
+                <input id="cijfer38" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer39" maxlength="1" type="text">
+                <input id="cijfer40" maxlength="1" type="text">
+                <input id="cijfer41" maxlength="1" type="text">
+            </div>
+
+
+            <!-- Rij 7   -->
+
+            <div class="clear"></div>
+            <div class="row">
+                <input id="cijfer42" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood" style="background-color: burlywood;"> 8</div>
+                <div class="rood" style="background-color: burlywood;">2</div>
+                <input id="cijfer43" maxlength="1" type="text">
+                <input id="cijfer44" maxlength="1" type="text">
+                <input id="cijfer45" maxlength="1" type="text">
+                <input id="cijfer46" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood" style="background-color: burlywood;">6</div>
+                <input id="cijfer47" maxlength="1" type="text" style="background-color: burlywood;">
+            </div>
+
+            <!-- Rij 8   -->
+
+            <div class="clear"></div>
+            <div class="row">
+                <div class="rood" style="background-color: burlywood;">5</div>
+                <input id="cijfer48" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer49" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood">9</div>
+                <div class="rood">1</div>
+                <div class="rood">4</div>
+                <input id="cijfer50" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer51" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer52" maxlength="1" type="text" style="background-color: burlywood;">
+            </div>
+
+
+            <!-- Rij 9   -->
+
+            <div class="clear"></div>
+            <div class="row">
+                <input id="cijfer53" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood" style="background-color: burlywood;">7</div>
+                <input id="cijfer54" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer55" maxlength="1" type="text" style="background-color: brown;">
+                <input id="cijfer56" maxlength="1" type="text">
+                <input id="cijfer57" maxlength="1" type="text">
+                <input id="cijfer58" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer59" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer60" maxlength="1" type="text" style="background-color: burlywood;">
+            </div>
+        </div>
+
+
+        <!-- Tweede  sudoku   -->
+
+
+
+
+        <!-- Tweede  sudoku   -->
+
+
+        <div id="sudoku1">
+
+            <!-- Rij 1   -->
+
+            <div class="clear"></div>
+            <div class="row">
+                <input id="cijfer61" maxlength="1" type="text">
+                <input id="cijfer62" maxlength="1" type="text">
+                <input id="cijfer63" maxlength="1" type="text">
+                <input id="cijfer64" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer65" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood" style="background-color: burlywood;">3</div>
+                <div class="rood">5</div>
+                <input id="cijfer66" maxlength="1" type="text" style="background-color: brown;">
+                <input id="cijfer67" maxlength="1" type="text">
+            </div>
+
+
+            <!-- Rij 2   -->
+
+            <div class="clear"></div>
+            <div class="row">
+                <input id="cijfer68" maxlength="1" type="text">
+                <div class="rood">2</div>
+                <input id="cijfer69" maxlength="1" type="text">
+                <input id="cijfer70" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer71" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer72" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer73" maxlength="1" type="text">
+                <input id="cijfer74" maxlength="1" type="text">
+                <div class="rood">8</div>
+            </div>
+
+
+            <!-- Rij 3   -->
+
+            <div class="clear"></div>
+            <div class="row">
+                <input id="cijfer75" maxlength="1" type="text">
+                <input id="cijfer76" maxlength="1" type="text">
+                <div class="rood">5</div>
+                <input id="cijfer77" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood" style="background-color: burlywood;">1</div>
+                <input id="cijfer78" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer79" maxlength="1" type="text">
+                <div class="rood">7</div>
+                <input id="cijfer80" maxlength="1" type="text">
+            </div>
+
+
+            <!-- Rij 4  -->
+
+            <div class="clear"></div>
+            <div class="row">
+                <input id="cijfer81" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer82" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood" style="background-color: burlywood;">3</div>
+                <div class="rood">5</div>
+                <input id="cijfer83" maxlength="1" type="text">
+                <input id="cijfer84" maxlength="1" type="text">
+                <input id="cijfer85" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer86" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood" style="background-color: burlywood;">4</div>
+            </div>
+
+
+            <!-- Rij 5   -->
+
+            <div class="clear"></div>
+            <div class="row">
+                <div class="rood" style="background-color: burlywood;">6</div>
+                <input id="cijfer87" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer88" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood">3</div>
+                <div class="rood">7</div>
+                <input id="cijfer89" maxlength="1" type="text">
+                <input id="cijfer90" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood" style="background-color: burlywood;">1</div>
+                <input id="cijfer91" maxlength="1" type="text" style="background-color: burlywood;">
+            </div>
+
+            <!-- Rij 6   -->
+
+            <div class="clear"></div>
+            <div class="row">
+                <input id="cijfer92" maxlength="1" type="text" style="background-color: burlywood;"> 
+                <div class="rood" style="background-color: burlywood;"> 8 </div>
+                <input id="cijfer93" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer94" maxlength="1" type="text" style="background-color: brown;">
+                <input id="cijfer95" maxlength="1" type="text">
+                <div class="rood">2</div>
+                <div class="rood" style="background-color: burlywood;">3</div>
+                <input id="cijfer96" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer97" maxlength="1" type="text" style="background-color: burlywood;">
+            </div>
+
+
+            <!-- Rij 7   -->
+
+            <div class="clear"></div>
+            <div class="row">
+                <div class="rood">9</div>
+                <input id="cijfer98" maxlength="1" type="text">
+                <input id="cijfer99" maxlength="1" type="text">
+                <input id="cijfer100" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer101" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood" style="background-color: burlywood;">5</div>
+                <input id="cijfer102" maxlength="1" type="text">
+                <div class="rood">6</div>
+                <input id="cijfer103" maxlength="1" type="text">
+            </div>
+
+
+            <!-- Rij 8   -->
+
+            <div class="clear"></div>
+            <div class="row">
+                <input id="cijfer104" maxlength="1" type="text">
+                <div class="rood">3</div>
+                <input id="cijfer105" maxlength="1" type="text" style="background-color: brown;">
+                <input id="cijfer106" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer107" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer108" maxlength="1" type="text" style="background-color: burlywood;">
+                <div class="rood">4</div>
+                <input id="cijfer109" maxlength="1" type="text">
+                <input id="cijfer110" maxlength="1" type="text">
+            </div>
+
+
+            <!-- Rij 9  -->
+
+            <div class="clear"></div>
+            <div class="row">
+                <input id="cijfer111" maxlength="1" type="text">
+                <input id="cijfer112" maxlength="1" type="text">
+                <div class="rood">7</div>
+                <div class="rood" style="background-color: burlywood;">9</div>
+                <input id="cijfer113" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer114" maxlength="1" type="text" style="background-color: burlywood;">
+                <input id="cijfer115" maxlength="1" type="text">
+                <input id="cijfer116" maxlength="1" type="text">
+                <input id="cijfer117" maxlength="1" type="text">
+            </div>
+
+
+    </div>
+    <button id="buttonSudoku" type="button" onclick="ControleVanDeSudokuCijfers()">CHECK</button>
+    <p id="crackTheCode"></p>
+
+        </div>
+<h1 id="Crack3"> CRACK THE CODE </h1>
+        <div id="Box5">
+
+            <input id="code1" maxlength="1" type="text">
+            <input id="code2" maxlength="1" type="text">
+            <input id="code3" maxlength="1" type="text">
+            <input id="code4" maxlength="1" type="text">
+            <input id="code5" maxlength="1" type="text">
+            <input id="code6" maxlength="1" type="text">
+        </div>
+    
+    <script>
+         function ControleVanDeSudokuCijfers() {
+            var getal, antwoord;
+            
+                          
+            getal = document.getElementById("code6").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+             
+             
+             
+             getal = document.getElementById("code5").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+             
+            
+             getal = document.getElementById("code4").value;
+
+            if (getal == 1) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+             
+             
+             getal = document.getElementById("code3").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+             
+             
+             getal = document.getElementById("code2").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+             
+             
+             getal = document.getElementById("code1").value;
+
+            if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+    </script>
+    
+    <div id="Button4">
+        <button type="button"> <a href="spel3.html"><b> NEXT </b></a> </button>
+    </div>
+    <script>
+        /* --> if en else statements gebruikt, gezien in de eerste semester bij c# en java */
+        function ControleVanDeSudokuCijfers() {
+            var getal, antwoord;
+            
+            
+                                                       /* RIJ 1 VAN DE SUDOKU */
+            /* code = 5 */
+            getal = document.getElementById("cijfer8").value;
+
+            if (getal == 5) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code = 4 */
+            getal = document.getElementById("cijfer7").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 6 */
+            getal = document.getElementById("cijfer6").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code =  7 */
+            getal = document.getElementById("cijfer5").value;
+
+            if (getal == 7) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 8 */
+            getal = document.getElementById("cijfer4").value;
+
+            if (getal == 8) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code = 9 */
+            getal = document.getElementById("cijfer3").value;
+
+            if (getal == 9) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 1 */
+            getal = document.getElementById("cijfer2").value;
+
+            if (getal == 1) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code =  4 */
+            getal = document.getElementById("cijfer1").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+                                                           /* RIJ 2 VAN DE SUDOKU */
+            /* code = 6 */
+            getal = document.getElementById("cijfer14").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code = 7 */
+            getal = document.getElementById("cijfer13").value;
+
+            if (getal == 7) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 2 */
+            getal = document.getElementById("cijfer12").value;
+
+            if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code =  3 */
+            getal = document.getElementById("cijfer11").value;
+
+            if (getal == 3) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 4 */
+            getal = document.getElementById("cijfer10").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code = 8 */
+            getal = document.getElementById("cijfer9").value;
+
+            if (getal == 8) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+                                                           /* RIJ 3 VAN DE SUDOKU */
+            /* code = 1 */
+            getal = document.getElementById("cijfer20").value;
+
+            if (getal == 1) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code = 3 */
+            getal = document.getElementById("cijfer19").value;
+
+            if (getal == 3) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 4 */
+            getal = document.getElementById("cijfer18").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code =  2 */
+            getal = document.getElementById("cijfer17").value;
+
+            if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 5 */
+            getal = document.getElementById("cijfer16").value;
+
+            if (getal == 5) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code = 7 */
+            getal = document.getElementById("cijfer15").value;
+
+            if (getal == 7) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+                                                /* RIJ 4 VAN DE SUDOKU */
+            /* code = 5 */
+            getal = document.getElementById("cijfer27").value;
+
+            if (getal == 5) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code = 9 */
+            getal = document.getElementById("cijfer26").value;
+
+            if (getal == 9) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 7 */
+            getal = document.getElementById("cijfer25").value;
+
+            if (getal == 7) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code =  1 */
+            getal = document.getElementById("cijfer24").value;
+
+            if (getal == 1) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code =  4 */
+            getal = document.getElementById("cijfer23").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 2 */
+            getal = document.getElementById("cijfer22").value;
+
+            if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code = 3 */
+            getal = document.getElementById("cijfer21").value;
+
+            if (getal == 3) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+                                                          /* RIJ 5 VAN DE SUDOKU */
+            /* code = 5 */
+            getal = document.getElementById("cijfer33").value;
+
+            if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code = 9 */
+            getal = document.getElementById("cijfer32").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 7 */
+            getal = document.getElementById("cijfer31").value;
+
+            if (getal == 8) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code =  1 */
+            getal = document.getElementById("cijfer30").value;
+
+            if (getal == 5) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code =  4 */
+            getal = document.getElementById("cijfer29").value;
+
+            if (getal == 7) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 2 */
+            getal = document.getElementById("cijfer28").value;
+
+            if (getal == 9) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+                                                        /* RIJ 6 VAN DE SUDOKU */
+            /* code = 5 */
+            getal = document.getElementById("cijfer41").value;
+
+            if (getal == 7) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code = 9 */
+            getal = document.getElementById("cijfer40").value;
+
+            if (getal == 1) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 7 */
+            getal = document.getElementById("cijfer39").value;
+
+            if (getal == 3) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code =  1 */
+            getal = document.getElementById("cijfer38").value;
+
+            if (getal == 9) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code =  4 */
+            getal = document.getElementById("cijfer37").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 2 */
+            getal = document.getElementById("cijfer36").value;
+
+            if (getal == 8) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code =  4 */
+            getal = document.getElementById("cijfer35").value;
+
+            if (getal == 5) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 2 */
+            getal = document.getElementById("cijfer34").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+
+                                                       /* RIJ 7 VAN DE SUDOKU */
+            /* code = 5 */
+            getal = document.getElementById("cijfer47").value;
+
+            if (getal == 9) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code = 9 */
+            getal = document.getElementById("cijfer46").value;
+
+            if (getal == 1) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 7 */
+            getal = document.getElementById("cijfer45").value;
+
+            if (getal == 5) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code =  1 */
+            getal = document.getElementById("cijfer44").value;
+
+            if (getal == 3) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code =  4 */
+            getal = document.getElementById("cijfer43").value;
+
+            if (getal == 7) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 2 */
+            getal = document.getElementById("cijfer42").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+                                                          /* RIJ 8 VAN DE SUDOKU */
+            /* code = 5 */
+            getal = document.getElementById("cijfer52").value;
+
+            if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code = 9 */
+            getal = document.getElementById("cijfer51").value;
+
+            if (getal == 8) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 7 */
+            getal = document.getElementById("cijfer50").value;
+
+            if (getal == 7) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code =  1 */
+            getal = document.getElementById("cijfer49").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code =  4 */
+            getal = document.getElementById("cijfer48").value;
+
+            if (getal == 3) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+                                                           /* RIJ 9 VAN DE SUDOKU */
+            /* code = 5 */
+            getal = document.getElementById("cijfer60").value;
+
+            if (getal == 3) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code = 9 */
+            getal = document.getElementById("cijfer59").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 7 */
+            getal = document.getElementById("cijfer58").value;
+
+            if (getal == 5) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code =  1 */
+            getal = document.getElementById("cijfer57").value;
+
+            if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code =  4 */
+            getal = document.getElementById("cijfer56").value;
+
+            if (getal == 8) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 2 */
+            getal = document.getElementById("cijfer55").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code =  4 */
+            getal = document.getElementById("cijfer54").value;
+
+            if (getal == 1) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+            /* code = 2 */
+            getal = document.getElementById("cijfer53").value;
+
+            if (getal == 9) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            
+            
+            /* SUDOKU 2 */
+             /* RIJ 1 VAN DE SUDOKU */
+           
+            getal = document.getElementById("cijfer67").value;
+
+            if (getal == 1) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer66").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer65").value;
+
+            if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer64").value;
+
+            if (getal == 7) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer63").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer62").value;
+
+            if (getal == 9) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer61").value;
+
+            if (getal == 8) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            
+                         /* RIJ 2 VAN DE SUDOKU */
+           
+            getal = document.getElementById("cijfer74").value;
+
+            if (getal == 3) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer73").value;
+
+            if (getal == 9) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer72").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer71").value;
+
+            if (getal == 5) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer70").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer69").value;
+
+            if (getal == 1) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer68").value;
+
+            if (getal == 7) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            
+                         /* RIJ 3 VAN DE SUDOKU */
+           
+            getal = document.getElementById("cijfer80").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer79").value;
+
+            if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer78").value;
+
+            if (getal == 9) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer77").value;
+
+            if (getal == 8) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer76").value;
+
+            if (getal == 1) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer75").value;
+             if (getal == 3) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            /* RIJ 4 VAN DE SUDOKU */
+           
+            getal = document.getElementById("cijfer86").value;
+
+            if (getal == 9) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer85").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer84").value;
+
+            if (getal == 1) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer83").value;
+
+            if (getal == 8) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer82").value;
+
+            if (getal == 7) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer81").value;
+             if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+                        /* RIJ 5 VAN DE SUDOKU */
+           
+            getal = document.getElementById("cijfer91").value;
+
+            if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer90").value;
+
+            if (getal == 8) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer89").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer88").value;
+
+            if (getal == 9) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer87").value;
+
+            if (getal == 5) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            
+            /* RIJ 6  VAN DE SUDOKU */
+           
+            getal = document.getElementById("cijfer97").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer96").value;
+
+            if (getal == 7) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer95").value;
+
+            if (getal == 9) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer94").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer93").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+             getal = document.getElementById("cijfer92").value;
+
+            if (getal == 1) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            
+            
+            /* RIJ 7 VAN DE SUDOKU */
+           
+            getal = document.getElementById("cijfer103").value;
+
+            if (getal == 3) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer102").value;
+
+            if (getal == 7) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer101").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer100").value;
+
+            if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer99").value;
+
+            if (getal == 8) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+             getal = document.getElementById("cijfer98").value;
+
+            if (getal == 1) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            
+            
+            
+            /* RIJ 8 VAN DE SUDOKU */
+           
+            getal = document.getElementById("cijfer110").value;
+
+            if (getal == 9) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer109").value;
+
+            if (getal == 8) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer108").value;
+
+            if (getal == 7) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer107").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer106").value;
+
+            if (getal == 1) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+             getal = document.getElementById("cijfer105").value;
+
+            if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer104").value;
+
+            if (getal == 5) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            
+            
+            
+                        /* RIJ 9 VAN DE SUDOKU */
+           
+            getal = document.getElementById("cijfer117").value;
+
+            if (getal == 5) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer116").value;
+
+            if (getal == 1) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer115").value;
+
+            if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            
+            getal = document.getElementById("cijfer114").value;
+
+            if (getal == 8) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer113").value;
+
+            if (getal == 3) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+             getal = document.getElementById("cijfer112").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+            
+            getal = document.getElementById("cijfer111").value;
+
+            if (getal == 4) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+        }
+    </script>
+</body>
+
+</html>
