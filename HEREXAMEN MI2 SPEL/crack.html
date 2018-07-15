@@ -1,0 +1,116 @@
+<!-- html document begint altijd met een ! + DOCTYPE -->
+<!DOCTYPE html>
+<!-- taal van de pagina zetten waar lang voor laguage staat -->
+<html lang="nl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crack</title>
+    <!-- html pagina met de css pagina linken -->
+    <link rel="stylesheet" href="STYLE/style.css">
+    <!-- logo op tab van de pagina zetten -->
+    <link rel="icon" href="IMG/logo%20games.png">
+</head>
+
+<body>
+    <div id="Box3">
+        <img src="IMG/paper.png" id="paper">
+        <div class="rij">
+            <div class="cijfer"> 3659 </div>
+            <p class="paragraaf"> Een nummer is correct, maar niet op de juiste plaats </p>
+            <div class="cijfer"> 5340 </div>
+            <p class="paragraaf"> Geen enkel van de nummers is correct</p>
+            <div class="cijfer"> 8721 </div>
+            <p class="paragraaf"> Twee nummers zijn correct, maar op de verkeerde plaats </p>
+            <div class="cijfer"> 3479 </div>
+            <p class="paragraaf"> Geen enkel van deze nummers is correct </p>
+            <div class="cijfer"> 0248 </div>
+            <p class="paragraaf"> Twee nummers zijn correct maar niet op de juiste plaats </p>
+        </div>
+
+    </div>
+
+
+    <!--  code  kraken -->
+    <div id="spel2">
+        <h1 id="Crack2"> CRACK DE CODE </h1>
+        <div id="boxx2">
+            <img src="IMG/lock.png" alt="slot" class="slot2"> &nbsp; &nbsp;
+            <img src="IMG/lock.png" alt="slot" class="slot2"> &nbsp; &nbsp;
+            <img src="IMG/lock.png" alt="slot" class="slot2"> &nbsp; &nbsp;
+            <img src="IMG/lock.png" alt="slot" class="slot2"> &nbsp; &nbsp;
+        </div>
+        <div id="Box4">
+            <input id="cijfer2" maxlength="1" type="text" style="background-color:  #8b7d6b;">
+            <input id="cijfer8" maxlength="1" type="text" style="background-color:  #8b7d6b;">
+            <input id="cijfer3" maxlength="1" type="text" style="background-color:  #8b7d6b;">
+            <input id="cijfer6" maxlength="1" type="text" style="background-color:  #8b7d6b;">
+        </div>
+    </div>
+
+
+    <div id="Button3">
+        <button type="button"> <a href="pagina.html"><b> Kies een ander spel </b></a> </button>
+    </div>
+
+    <button id="buttonControle" type="button" onclick="controleVanDeWaarde()">CONTROLE</button>
+
+    <p id="crackTheCode"></p>
+
+    <script>
+        /* --> if en else statements gebruikt, gezien in de eerste semester bij c# en java */
+        function controleVanDeWaarde() {
+            var getal, antwoord;
+
+
+            /* code = 2 */
+            /* document.getElementById() heb ik in hoofdstuk 10.3 Het document object gevonden https://javascript.markkamsma.nl/hoofdstuk_10.php */
+
+            getal = document.getElementById("cijfer2").value;
+
+            if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+
+            /* code = 8 */
+            getal = document.getElementById("cijfer8").value;
+
+            if (getal == 8) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+
+            /* code = 2 */
+            getal = document.getElementById("cijfer3").value;
+
+            if (getal == 2) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+
+            /* code = 6 */
+            getal = document.getElementById("cijfer6").value;
+
+            if (getal == 6) {
+                antwoord = "Proficiat! Dit is een juiste antwoord";
+            } else {
+                antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";
+            }
+            document.getElementById("crackTheCode").innerHTML = antwoord;
+
+        }
+    </script>
+</body>
+</html>
