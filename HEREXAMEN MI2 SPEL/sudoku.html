@@ -13,8 +13,9 @@
 <body>
 
     <!--  html gedeelte  -->
-
+    <h1> SUDOKU </h1>
     <div id="sudokus">
+
 
         <div id="sudoku">
 
@@ -316,16 +317,12 @@
         </div>
         <button id="buttonSudoku" type="button" onclick="ControleVanDeSudokuCijfers()">CONTROLE</button>
 
+
     </div>
-    <h1 id="Crack3"> CRACK DE CODE </h1>
-    <div id="boxx">
-        <img src="IMG/lock.png" alt="slot" class="slot">  
-        <img src="IMG/lock.png" alt="slot" class="slot">  
-        <img src="IMG/lock.png" alt="slot" class="slot">  
-        <img src="IMG/lock.png" alt="slot" class="slot">  
-        <img src="IMG/lock.png" alt="slot" class="slot">         
-        <img src="IMG/lock.png" alt="slot" class="slot">  
-    </div>
+    <h2 id="Crack3"> KRAAK DE CODE </h2>
+    <p id="crackTheCode"></p>
+
+
     <div id="Box5">
 
         <input id="code1" maxlength="1" type="text" style="background-color:  #d1af96;">
@@ -334,6 +331,15 @@
         <input id="code4" maxlength="1" type="text" style="background-color:  #d1af96;">
         <input id="code5" maxlength="1" type="text" style="background-color:  #d1af96;">
         <input id="code6" maxlength="1" type="text" style="background-color:  #d1af96;">
+    </div>
+
+    <div id="boxx">
+        <img src="IMG/lock.png" alt="slot" class="slot">
+        <img src="IMG/lock.png" alt="slot" class="slot">
+        <img src="IMG/lock.png" alt="slot" class="slot">
+        <img src="IMG/lock.png" alt="slot" class="slot">
+        <img src="IMG/lock.png" alt="slot" class="slot">
+        <img src="IMG/lock.png" alt="slot" class="slot">
     </div>
 
     <script>
@@ -354,7 +360,7 @@
 
             getal = document.getElementById("code5").value;
 
-            if (getal == 4) {
+            if (getal == 2) {
                 antwoord = "Proficiat! Dit is een juiste antwoord";
             } else {
                 antwoord = "Je hebt een foute cijfer ingevuld. Probeer nog eens.";

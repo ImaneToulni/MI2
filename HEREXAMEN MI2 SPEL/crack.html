@@ -13,8 +13,10 @@
 </head>
 
 <body>
+    <h1> RAADSEL </h1>
     <div id="Box3">
         <img src="IMG/paper.png" id="paper">
+
         <div class="rij">
             <div class="cijfer"> 3659 </div>
             <p class="paragraaf"> Een nummer is correct, maar niet op de juiste plaats </p>
@@ -33,18 +35,20 @@
 
     <!--  code  kraken -->
     <div id="spel2">
-        <h1 id="Crack2"> CRACK DE CODE </h1>
-        <div id="boxx2">
-            <img src="IMG/lock.png" alt="slot" class="slot2"> &nbsp; &nbsp;
-            <img src="IMG/lock.png" alt="slot" class="slot2"> &nbsp; &nbsp;
-            <img src="IMG/lock.png" alt="slot" class="slot2"> &nbsp; &nbsp;
-            <img src="IMG/lock.png" alt="slot" class="slot2"> &nbsp; &nbsp;
-        </div>
+        <h2 id="Crack3"> KRAAK DE CODE </h2>
+
         <div id="Box4">
             <input id="cijfer2" maxlength="1" type="text" style="background-color:  #8b7d6b;">
             <input id="cijfer8" maxlength="1" type="text" style="background-color:  #8b7d6b;">
             <input id="cijfer3" maxlength="1" type="text" style="background-color:  #8b7d6b;">
             <input id="cijfer6" maxlength="1" type="text" style="background-color:  #8b7d6b;">
+        </div>
+
+        <div id="boxx2">
+            <img src="IMG/lock.png" alt="slot" class="slot2"> &nbsp; &nbsp;
+            <img src="IMG/lock.png" alt="slot" class="slot2"> &nbsp; &nbsp;
+            <img src="IMG/lock.png" alt="slot" class="slot2"> &nbsp; &nbsp;
+            <img src="IMG/lock.png" alt="slot" class="slot2"> &nbsp; &nbsp;
         </div>
     </div>
 
@@ -52,10 +56,10 @@
     <div id="Button3">
         <button type="button"> <a href="pagina.html"><b> Kies een ander spel </b></a> </button>
     </div>
-
+    <p id="crackTheCode"></p>
     <button id="buttonControle" type="button" onclick="controleVanDeWaarde()">CONTROLE</button>
 
-    <p id="crackTheCode"></p>
+
 
     <script>
         /* --> if en else statements gebruikt, gezien in de eerste semester bij c# en java */
@@ -113,4 +117,5 @@
         }
     </script>
 </body>
+
 </html>
